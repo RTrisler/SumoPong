@@ -6,6 +6,9 @@ public class ball : MonoBehaviour
 {
     public Vector2 dir;
     public float speed = 3f;
+
+    public scoreManager scoreManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,12 +51,12 @@ public class ball : MonoBehaviour
             dir = new Vector2(disx,disy);
         }
         // if the ball hits a boundary collision it will alert who won the round and reset the ball in the middle of the arena
-        else if(c.gameObject.CompareTag("rightCollisions")){
-            print("Left Wins");
+        else if(c.gameObject.CompareTag("Right Boundary")){
+            scoreManager.Player1Goal();
             Start();
         }
-        else if(c.gameObject.CompareTag("leftCollisions")){
-            print("Right Wins");
+        else if(c.gameObject.CompareTag("Left Boundary")){
+            scoreManager.Player2Goal();
             Start();
         }
         
