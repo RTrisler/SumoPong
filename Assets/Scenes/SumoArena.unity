@@ -520,7 +520,7 @@ PrefabInstance:
     - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
       propertyPath: scoreManager
       value: 
-      objectReference: {fileID: 1034756763}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
 --- !u!1001 &672918642
@@ -624,7 +624,18 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -5.7643294, y: -6.3069077}
+    - - {x: 5.6617217, y: -6.2796245}
+      - {x: 5.652781, y: -3.0338466}
+      - {x: 5.6457705, y: -2.3541474}
+      - {x: 5.4551573, y: -1.9315282}
+      - {x: 4.3745656, y: -0.49193323}
+      - {x: 1.0768265, y: -0.37117803}
+      - {x: -1.9861515, y: -0.32019043}
+      - {x: -3.8034472, y: -0.43582463}
+      - {x: -5.1140084, y: -1.8181858}
+      - {x: -5.6082773, y: -2.5177627}
+      - {x: -5.5061526, y: -6.279386}
+      - {x: -5.7643294, y: -6.3069077}
       - {x: -5.8400373, y: -2.530674}
       - {x: -5.302707, y: -1.6398132}
       - {x: -3.9752605, y: -0.23497924}
@@ -771,7 +782,7 @@ MonoBehaviour:
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 16
   m_ColliderOffset: 0
-  m_UpdateCollider: 1
+  m_UpdateCollider: 0
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 0
@@ -964,17 +975,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c87944d59870d494fb8258826aab2be3, type: 3}
---- !u!114 &1034756763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4616993552657431220, guid: 85ce26b0cc2ed63479590d0a56c46eb9, type: 3}
-  m_PrefabInstance: {fileID: 1593701726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d2da8d110ca6f43b64366c1907810b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1593701726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1135,8 +1135,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010441993}
   m_LocalRotation: {x: -0, y: -0, z: -0.7103136, w: 0.7038854}
-  m_LocalPosition: {x: -6.23, y: 0.88, z: 0.0018490832}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.2299957, y: 0.87999964, z: 0.0018490832}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 712869208}
@@ -1167,15 +1167,18 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 5.721917, y: -6.2201076}
-      - {x: 5.664379, y: -2.4124742}
-      - {x: 5.4556565, y: -1.936959}
-      - {x: 4.3432703, y: -0.46788096}
-      - {x: -2.1915379, y: -0.30805767}
-      - {x: -3.9268875, y: -0.4504639}
-      - {x: -5.1398005, y: -1.7930869}
-      - {x: -5.606852, y: -2.5818486}
-      - {x: -5.4521055, y: -6.304548}
+    - - {x: 5.6617217, y: -6.2796245}
+      - {x: 5.652781, y: -3.0338466}
+      - {x: 5.6457705, y: -2.3541474}
+      - {x: 5.4551573, y: -1.9315282}
+      - {x: 4.3745656, y: -0.49193323}
+      - {x: 1.0768265, y: -0.37117803}
+      - {x: -1.9861515, y: -0.32019043}
+      - {x: -3.8034472, y: -0.43582463}
+      - {x: -5.1140084, y: -1.8181858}
+      - {x: -5.6082773, y: -2.5177627}
+      - {x: -5.5061526, y: -6.279386}
+      - {x: -5.7643294, y: -6.306907}
       - {x: -5.7643294, y: -6.3069077}
       - {x: -5.8400373, y: -2.530674}
       - {x: -5.302707, y: -1.6398132}
@@ -1187,7 +1190,8 @@ PolygonCollider2D:
       - {x: 5.8534603, y: -2.2346942}
       - {x: 5.8901715, y: -2.5708237}
       - {x: 5.9637356, y: -6.028948}
-      - {x: 6.1295676, y: -6.2170277}
+      - {x: 5.9690523, y: -6.2788906}
+      - {x: 5.969053, y: -6.278891}
 --- !u!114 &2010441996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1327,7 @@ MonoBehaviour:
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 16
   m_ColliderOffset: 0
-  m_UpdateCollider: 1
+  m_UpdateCollider: 0
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 0
