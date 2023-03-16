@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d00cb86d60b44148a9f34d38fceb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 90
   dir: {x: 0, y: 0, z: 0}
 --- !u!1 &72417658 stripped
 GameObject:
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d00cb86d60b44148a9f34d38fceb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 90
   dir: {x: 0, y: 0, z: 0}
 --- !u!61 &72417660
 BoxCollider2D:
@@ -1055,6 +1057,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
+      propertyPath: ScoreManager
+      value: 
+      objectReference: {fileID: 2029415016}
     - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
       propertyPath: scoreManager
       value: 

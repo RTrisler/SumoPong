@@ -1191,6 +1191,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
+      propertyPath: ScoreManager
+      value: 
+      objectReference: {fileID: 2029415016}
+    - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 2029415016}
