@@ -35,7 +35,7 @@ public class ScoreManager : MonoBehaviour
     {
         if(player1Score == scoreToReach || player2Score == scoreToReach)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }

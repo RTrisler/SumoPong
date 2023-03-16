@@ -850,6 +850,10 @@ PrefabInstance:
       propertyPath: audioSrc2
       value: 
       objectReference: {fileID: 1231561356}
+    - target: {fileID: 5518640268777408310, guid: ed020ee03473c284c9c07fca05ca56b3, type: 3}
+      propertyPath: ScoreManager
+      value: 
+      objectReference: {fileID: 2029415016}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed020ee03473c284c9c07fca05ca56b3, type: 3}
 --- !u!1001 &1215017219
