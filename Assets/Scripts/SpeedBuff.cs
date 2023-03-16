@@ -9,6 +9,6 @@ public class SpeedBuff : PowerupEffect
     
     public override void Apply(GameObject target)
     {
-        target.GetComponent<Paddle>().speed += amount;
+        target.GetComponent<Paddle>().speed = amount;
     }
 }
