@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d00cb86d60b44148a9f34d38fceb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 90
   dir: {x: 0, y: 0, z: 0}
 --- !u!1 &72417658 stripped
 GameObject:
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d00cb86d60b44148a9f34d38fceb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 90
   dir: {x: 0, y: 0, z: 0}
 --- !u!61 &72417660
 BoxCollider2D:
@@ -517,6 +519,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
+      propertyPath: ScoreManager
+      value: 
+      objectReference: {fileID: 712869209}
     - target: {fileID: 5518640268777408310, guid: 1a1e12bc554bb154a96c284bf0c75c28, type: 3}
       propertyPath: scoreManager
       value: 
@@ -866,6 +872,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1530472166765771212, guid: 4149952f52e00ee489c90dec30112327, type: 3}
   m_PrefabInstance: {fileID: 413930814}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &712869209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1530472166765771203, guid: 4149952f52e00ee489c90dec30112327, type: 3}
+  m_PrefabInstance: {fileID: 413930814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d2da8d110ca6f43b64366c1907810b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &799306502
 PrefabInstance:
   m_ObjectHideFlags: 0
