@@ -1021,8 +1021,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.17646655
-        value: 0.12931323
+        time: 0.08455658
+        value: 0.35345066
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1052,7 +1052,7 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 38357
+      ctime1: 65535
       ctime2: 0
       ctime3: 0
       ctime4: 0
@@ -1338,7 +1338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 875815687991250559, guid: b7e466e0b67e62243bee901ab839fd06, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e466e0b67e62243bee901ab839fd06, type: 3}
