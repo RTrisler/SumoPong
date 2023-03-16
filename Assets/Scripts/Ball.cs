@@ -8,8 +8,8 @@ public class Ball : MonoBehaviour
     public float speed = 3f;
     public string lasthit = "";
     public ScoreManager ScoreManager;
-    private AudioSource audioSrc1;
-    private AudioSource audioSrc2;
+    public AudioSource audioSrc1;
+    public AudioSource audioSrc2;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +28,11 @@ public class Ball : MonoBehaviour
             dir.y = Mathf.Sin(randir);
         }
 
-            audioSrc1 = GetComponent<AudioSource>();
-            audioSrc1.clip = Resources.Load<AudioClip>("oof1");
+        //audioSrc1 = GetComponent<AudioSource>();
+        //audioSrc1.clip = Resources.Load<AudioClip>("oof1");
 
-            audioSrc2 = GetComponent<AudioSource>();
-            audioSrc2.clip = Resources.Load<AudioClip>("oof2");
+        //audioSrc2 = GetComponent<AudioSource>();
+        //audioSrc2.clip = Resources.Load<AudioClip>("oof2");
     }
 
     // Update is called once per frame
