@@ -20,25 +20,25 @@ public class Paddle : MonoBehaviour
         //for the paddles to move in a circular fashion, the RotateAround transformation is used around 0,0
         if(gameObject.CompareTag("PaddleRight")){
             if(Input.GetKey(KeyCode.UpArrow)){
-                if(gameObject.transform.position.x>1 && gameObject.transform.position.y<3.8f){
+                if(gameObject.transform.position.x>1 && gameObject.transform.position.y<4f){
                     transform.RotateAround(dir,rotationPoint,speed*Time.deltaTime);
                 }
             }
 
             if(Input.GetKey(KeyCode.DownArrow)){
-                if(gameObject.transform.position.x>1 && gameObject.transform.position.y>-3.8f){
+                if(gameObject.transform.position.x>1 && gameObject.transform.position.y>-4f){
                     transform.RotateAround(dir,rotationPoint,-speed*Time.deltaTime);
                 }
             }
         }
         if(gameObject.CompareTag("PaddleLeft")){
             if(Input.GetKey(KeyCode.W)){
-                if(gameObject.transform.position.x<-1 && gameObject.transform.position.y<3.8f){
+                if(gameObject.transform.position.x<-1 && gameObject.transform.position.y<4f){
                     transform.RotateAround(dir,rotationPoint,-speed*Time.deltaTime);
                 }
             }
             if(Input.GetKey(KeyCode.S)){
-                if(gameObject.transform.position.x<-1 && gameObject.transform.position.y>-3.8f){
+                if(gameObject.transform.position.x<-1 && gameObject.transform.position.y>-4f){
                     transform.RotateAround(dir,rotationPoint,speed*Time.deltaTime);
                 }
             }
