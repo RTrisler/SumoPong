@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
-    private int speed = 90;
+
+    public int speed = 90;
     public Vector3 dir;
     Vector3 rotationPoint = new Vector3(0,0,1);
     // Start is called before the first frame update

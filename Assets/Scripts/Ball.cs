@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     public Vector2 dir;
     public float speed = 3f;
-
+    public string lasthit = "";
     public ScoreManager scoreManager;
 
     // Start is called before the first frame update
@@ -37,6 +37,7 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter2D(Collision2D c){
         // when the ball hits a paddle, it will go back through the middle at a random point to bounce back.
         if(c.gameObject.CompareTag("PaddleLeft")){
+            lasthit = "PaddleLeft";
             float rany = Random.Range(-2.5f,2.5f);
             float ranx = Random.Range(0f,0.5f);
             float disx = (ranx-transform.position.x)/2;
@@ -44,6 +45,7 @@ public class Ball : MonoBehaviour
             dir = new Vector2(disx,disy);
         }
         else if(c.gameObject.CompareTag("PaddleRight")){
+            lasthit = "PaddleRight";
             float rany = Random.Range(-2.5f,2.5f);
             float ranx = Random.Range(-0.5f,0);
             float disx = (ranx-transform.position.x)/2;
