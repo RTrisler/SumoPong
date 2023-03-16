@@ -18,6 +18,12 @@ public class Powerup : MonoBehaviour
             Destroy(gameObject);
             powerupEffect.Apply(PaddleLeft);
         }
+        else if (ball.GetComponent<Ball>().lasthit == "PaddleRight")
+        {
+            Debug.Log("PaddleRightPowerUp");
+            Destroy(gameObject);
+            powerupEffect.Apply(PaddleRight);
+        }
         
     }
 }
