@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     public float speed = 3f;
     public string lasthit = "";
     public ScoreManager ScoreManager;
+    private AudioSource audioSrc1;
+    private AudioSource audioSrc2;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,12 @@ public class Ball : MonoBehaviour
             dir.x = Mathf.Cos(randir);
             dir.y = Mathf.Sin(randir);
         }
+
+            audioSrc1 = GetComponent<AudioSource>();
+            audioSrc1.clip = Resources.Load<AudioClip>("oof1");
+
+            audioSrc2 = GetComponent<AudioSource>();
+            audioSrc2.clip = Resources.Load<AudioClip>("oof2");
     }
 
     // Update is called once per frame
@@ -43,6 +51,7 @@ public class Ball : MonoBehaviour
             float disx = (ranx-transform.position.x)/2;
             float disy = (rany-transform.position.y)/2;
             dir = new Vector2(disx,disy);
+            audioSrc1.Play();
         }
         else if(c.gameObject.CompareTag("PaddleRight")){
             lasthit = "PaddleRight";
@@ -51,6 +60,7 @@ public class Ball : MonoBehaviour
             float disx = (ranx-transform.position.x)/2;
             float disy = (rany-transform.position.y)/2;
             dir = new Vector2(disx,disy);
+            audioSrc2.Play();
         }
         // if the ball hits a boundary collision it will alert who won the round and reset the ball in the middle of the arena
         else if(c.gameObject.CompareTag("Right Boundary")){
